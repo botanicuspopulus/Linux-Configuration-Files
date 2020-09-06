@@ -8,7 +8,7 @@ fi
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/lib/python3.8/site-packages/powerline:$PATH
 export ZSH="/home/botanthebushpig/.oh-my-zsh"
 export UPDATE_ZSH_DAYS=13
-export EDITOR="vim"
+export EDITOR="nvim"
 export LANG=en_US.UTF-8
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -52,14 +52,13 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate
 
 if [[ "$ENABLE_CORRECTION" == "true" ]]; then
+  alias vim="nvim"
   alias zshconfig="vim ~/.zshrc"
   alias vimconfig="vim ~/.vimrc"
   alias zshreload="source ~/.zshrc"
   alias tmuxconfig="vim ~/.tmux.conf"
   alias bashrcconfig="vim ~/.bashrc"
-  alias cp='nocorrect cp -v'
   alias man='nocorrect man'
-  alias mv='nocorrect mv -v'
   alias mkdir='nocorrect mkdir -v -p'
   alias sudo='nocorrect sudo'
 
