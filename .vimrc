@@ -25,16 +25,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mg979/vim-visual-multi'
-Plug 'JuliaEditorSupport/julia-vim'
-
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-
-autocmd BufEnter * call ncm2#enable_for_buffer()
-set completeopt=noinsert,menuone,noselect
-
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
 
 call plug#end()
 
@@ -61,10 +51,10 @@ set nowrap
 set autoindent
 set smarttab
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set shiftround
-set tabstop=2
-set softtabstop=2
+set tabstop=4
+set softtabstop=4
 
 " Search Settings
 set incsearch
